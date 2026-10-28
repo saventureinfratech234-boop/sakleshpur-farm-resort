@@ -1,0 +1,1750 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sakleshpur Farm Resort | Saventure</title>
+
+  <meta name="description"
+    content="Discover the Saventure Sakleshpur Farm Resort, featuring holiday homes, landscaped gardens, a clubhouse, cafe, meditation pavilion and nature-inspired experiences.">
+
+  <style>
+    /* ===== GLOBAL STYLES ===== */
+    :root {
+      --green: #183c2b;
+      --dark-green: #10291e;
+      --gold: #d8b46a;
+      --cream: #f7f5ef;
+      --white: #ffffff;
+      --text: #303b32;
+      --muted: #6c756d;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    img, video {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 42px;
+    }
+
+    .eyebrow {
+      color: #9b7938;
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(30px, 4vw, 46px);
+      color: var(--green);
+      line-height: 1.2;
+      margin: 12px 0 16px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    /* ===== NAVIGATION BAR ===== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--dark-green);
+      color: var(--white);
+      box-shadow: 0 3px 15px #00000018;
+    }
+
+    .nav-inner {
+      position: relative;
+      width: min(1320px, 94%);
+      margin: auto;
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .brand-icon {
+      color: var(--gold);
+      font-size: 32px;
+    }
+
+    .brand-name {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 1.2;
+    }
+
+    .brand-name small {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      letter-spacing: 4px;
+      margin-top: 5px;
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      transition: color .25s;
+      white-space: nowrap;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold);
+    }
+
+    .nav-cta, .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--dark-green);
+      border: 1px solid var(--gold);
+      padding: 12px 20px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .25s;
+    }
+
+    .nav-cta:hover, .btn:hover {
+      background: transparent;
+      color: var(--gold);
+    }
+
+    .menu-toggle {
+      display: none;
+      color: white;
+      border: 1px solid #ffffff50;
+      background: transparent;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    /* ===== HERO SECTION ===== */
+.hero {
+  position: relative;
+  min-height: 730px;
+  display: flex;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  background: #071c12;
+}
+
+.hero video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #071c12d9 0%,
+    #071c1280 48%,
+    #071c1220 100%
+  );
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+    .hero-content {
+      max-width: 740px;
+      padding: 95px 0;
+    }
+
+    .hero .eyebrow {
+      color: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.08;
+      font-weight: normal;
+      margin: 20px 0;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 590px;
+      color: #f0f1eb;
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: white;
+      border: 1px solid #ffffffa0;
+    }
+
+    .btn-outline:hover {
+      background: white;
+      color: var(--green);
+    }
+
+    /* ===== PROJECT FACTS ===== */
+    .facts {
+      background: var(--cream);
+      border-bottom: 1px solid #e5e2d8;
+    }
+
+    .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .fact {
+      padding: 8px 15px;
+      border-right: 1px solid #dcd8cb;
+    }
+
+    .fact:last-child {
+      border-right: none;
+    }
+
+    .fact strong {
+      display: block;
+      font-family: Georgia, serif;
+      color: var(--green);
+      font-size: 22px;
+    }
+
+    .fact span {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ===== OVERVIEW ===== */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .overview-image {
+      position: relative;
+    }
+
+    .overview-image img {
+      height: 440px;
+      object-fit: cover;
+    }
+
+    .image-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, #081a10d9);
+      padding: 35px 24px 20px;
+      color: white;
+    }
+
+    .overview-content h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 4vw, 45px);
+      color: var(--green);
+      line-height: 1.2;
+      margin: 12px 0 20px;
+    }
+
+    .overview-content p {
+      color: var(--muted);
+      margin-bottom: 17px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin: 24px 0 30px;
+    }
+
+    .feature-list li {
+      padding: 9px 0;
+      border-bottom: 1px solid #ecebe5;
+    }
+
+    .feature-list li::before {
+      content: "✓";
+      color: #a6813b;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+
+    /* ===== VIDEO WALKTHROUGH ===== */
+    .walkthrough {
+      background: var(--dark-green);
+      color: white;
+    }
+
+    .walkthrough .section-heading h2 {
+      color: white;
+    }
+
+    .walkthrough .section-heading p {
+      color: #c5d0c7;
+    }
+
+    .video-frame {
+      max-width: 1000px;
+      margin: auto;
+      background: #091b12;
+      border: 1px solid #d8b46a60;
+      padding: 8px;
+    }
+
+    .video-frame video {
+      max-height: 570px;
+      aspect-ratio: 16 / 9;
+      object-fit: contain;
+      background: #000;
+    }
+
+    .video-note {
+      text-align: center;
+      font-size: 13px;
+      color: #c5d0c7;
+      margin-top: 18px;
+    }
+
+    /* ===== MASTERPLAN ===== */
+    .masterplan {
+      background: var(--cream);
+    }
+
+    .masterplan-image {
+      background: white;
+      padding: 12px;
+      border: 1px solid #e5e0d3;
+      box-shadow: 0 12px 35px #14291b12;
+    }
+
+    .masterplan-image img {
+      max-height: 720px;
+      object-fit: contain;
+      background: #eae8dc;
+    }
+
+    .plan-caption {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 16px 10px 5px;
+    }
+
+    .plan-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    /* ===== AMENITIES ===== */
+    .amenities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .amenity-card {
+      border: 1px solid #e8e7df;
+      background: white;
+      overflow: hidden;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .amenity-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 35px #10291e12;
+    }
+
+    .amenity-image {
+      height: 210px;
+      overflow: hidden;
+      background: #e8e7dc;
+    }
+
+    .amenity-image img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s;
+    }
+
+    .amenity-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .amenity-info {
+      padding: 21px;
+    }
+
+    .amenity-number {
+      color: #a6813b;
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+
+    .amenity-info h3 {
+      color: var(--green);
+      font-family: Georgia, serif;
+      font-size: 22px;
+      margin: 7px 0;
+    }
+
+    .amenity-info p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ===== STORYBOARD GALLERY ===== */
+    .gallery {
+      background: var(--cream);
+    }
+
+    .storyboard-image {
+      max-width: 1100px;
+      margin: auto;
+      cursor: zoom-in;
+      background: white;
+      padding: 8px;
+      border: 1px solid #e3dfd2;
+    }
+
+    .storyboard-image img {
+      height: auto;
+    }
+
+    .gallery-note {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 15px;
+    }
+
+    /* Google Map — compact and positioned below the project details */
+    .contact-map {
+      width: 100%;
+      height: 280px;
+      margin-top: 18px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, .14);
+      background: #e8e7dc;
+    }
+
+    .contact-map iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* ===== CONTACT ===== */
+    .contact {
+      background: var(--green);
+      color: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .contact h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 4vw, 44px);
+      line-height: 1.2;
+      margin: 15px 0 20px;
+    }
+
+    .contact-copy {
+      color: #d5dfd6;
+      margin-bottom: 25px;
+    }
+
+    .contact-details p {
+      margin: 13px 0;
+      color: #edf0e8;
+    }
+
+    .contact-form {
+      padding: 28px;
+      background: white;
+      color: var(--text);
+    }
+
+    .contact-form h3 {
+      font-family: Georgia, serif;
+      color: var(--green);
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #dcded7;
+      background: #fff;
+      color: var(--text);
+      font: inherit;
+      font-size: 14px;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 95px;
+    }
+
+    .contact-form .btn {
+      width: 100%;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: #0a1d14;
+      color: #d7dfd6;
+      padding: 28px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .footer p {
+      font-size: 12px;
+    }
+
+    .footer a {
+      color: var(--gold);
+    }
+
+    /* ===== IMAGE LIGHTBOX ===== */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: #000000ed;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 1100px;
+      max-height: 90vh;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 18px;
+      right: 25px;
+      border: 0;
+      background: transparent;
+      color: white;
+      font-size: 36px;
+      cursor: pointer;
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 1080px) {
+      .nav-links {
+        gap: 13px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .overview-grid {
+        gap: 30px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-inner {
+        min-height: 70px;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: -3.2%;
+        right: -3.2%;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+        background: var(--dark-green);
+        padding: 12px 5% 22px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        box-shadow: 0 12px 20px #00000025;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 12px 0;
+        font-size: 14px;
+        border-bottom: 1px solid #ffffff18;
+      }
+
+      .nav-links .nav-cta {
+        display: block;
+        margin-top: 14px;
+        padding: 12px 16px;
+        text-align: center;
+        border: 1px solid var(--gold);
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+        .hero {
+    min-height: 550px;
+    overflow: hidden;
+  }
+
+  .hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      90deg,
+      rgba(7, 28, 18, 0.85),
+      rgba(7, 28, 18, 0.45)
+    );
+  }
+
+  .hero .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-content {
+    padding: 65px 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(36px, 8vw, 48px);
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+      .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px 0;
+      }
+
+      .fact:nth-child(2) {
+        border-right: none;
+      }
+
+      .overview-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .overview-image img {
+        height: 350px;
+      }
+
+      .amenities-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .contact-map {
+        height: 230px;
+        margin-top: 14px;
+        border-radius: 8px;
+      }
+
+      .container {
+        width: 92%;
+      }
+
+      .nav-inner {
+        width: 92%;
+        gap: 12px;
+      }
+
+      .brand {
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .brand-icon {
+        font-size: 27px;
+      }
+
+      .brand-name {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+      }
+
+      .brand-name small {
+        font-size: 8px;
+        letter-spacing: 3px;
+      }
+
+      .menu-toggle {
+        flex-shrink: 0;
+        padding: 8px 10px;
+        font-size: 13px;
+      }
+
+      .hero {
+        min-height: 500px;
+        background-position: 55% center;
+      }
+
+      .hero-content {
+        padding: 70px 0;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .facts-grid {
+        padding: 22px 0;
+      }
+
+      .fact strong {
+        font-size: 19px;
+      }
+
+      .fact span {
+        font-size: 11px;
+      }
+
+      .amenities-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .amenity-image {
+        height: 230px;
+      }
+
+      .contact-form {
+        padding: 20px;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    /* ===== MOBILE HERO VIDEO ===== */
+/* ===== SMALL MOBILE SCREENS ===== */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-buttons .btn {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+
+      <a href="#home" class="brand" aria-label="Saventure home">
+        <span class="brand-icon">❋</span>
+        <span class="brand-name">
+          SAVENTURE
+          <small>FARM RESORT</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-controls="navLinks"
+        aria-expanded="false"
+        type="button">
+        ☰ Menu
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#walkthrough">Walkthrough</a></li>
+        <li><a href="#masterplan">Masterplan</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Enquire Now ↗</a></li>
+      </ul>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+
+        <video autoplay muted loop playsinline>
+          <source src="resort.mp4" type="video/mp4">
+       </video>
+
+
+      <div class="container">
+        <div class="hero-content">
+
+          <span class="eyebrow">
+            A Nature-Inspired Retreat by Saventure
+          </span>
+
+          <h1>
+            Discover Serenity at
+            <span>Sakleshpur</span>
+          </h1>
+
+          <p>
+            Experience a thoughtfully envisioned farm resort surrounded
+            by lush greenery, elegant holiday homes, landscaped gardens
+            and relaxing spaces inspired by nature.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#masterplan" class="btn">
+              Explore the Masterplan ↗
+            </a>
+
+            <a href="#walkthrough" class="btn btn-outline">
+              ▶ Watch Walkthrough
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT FACTS ===== -->
+    <section class="facts">
+      <div class="container facts-grid">
+
+        <div class="fact">
+          <strong>Sakleshpur</strong>
+          <span>Project Location</span>
+        </div>
+
+        <div class="fact">
+          <strong>Nature Living</strong>
+          <span>Resort Experience</span>
+        </div>
+
+        <div class="fact">
+          <strong>Holiday Homes</strong>
+          <span>Planned Accommodation</span>
+        </div>
+
+        <div class="fact">
+          <strong>Leisure & Wellness</strong>
+          <span>Recreation Spaces</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PROJECT OVERVIEW ===== -->
+    <section class="section" id="overview">
+      <div class="container overview-grid">
+
+        <div class="overview-image">
+          <img
+            src="images/Night-view.png"
+            alt="Aerial concept view of the Saventure Sakleshpur farm resort"
+            loading="lazy">
+
+          <div class="image-caption">
+            <strong>Saventure Sakleshpur Farm Resort</strong>
+            <div>Conceptual aerial visualization</div>
+          </div>
+        </div>
+
+        <div class="overview-content">
+
+          <span class="eyebrow">The Project</span>
+
+          <h2>
+            Where Nature Meets Thoughtful Living
+          </h2>
+
+          <p>
+            Saventure Sakleshpur Farm Resort is envisioned as a
+            destination that brings together natural surroundings,
+            comfortable holiday homes and spaces for leisure,
+            wellness and social gatherings.
+          </p>
+
+          <p>
+            From landscaped gardens and horticulture areas to a
+            welcoming clubhouse and peaceful meditation pavilion,
+            the concept emphasizes a relaxed connection with nature.
+          </p>
+
+          <ul class="feature-list">
+            <li>Nature-inspired holiday homes</li>
+            <li>Landscaped gardens and horticulture</li>
+            <li>Clubhouse and dining facilities</li>
+            <li>Meditation and wellness spaces</li>
+            <li>Recreational and gathering areas</li>
+          </ul>
+
+          <a href="#amenities" class="btn">
+            Explore Amenities ↗
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO WALKTHROUGH ===== -->
+    <section class="section walkthrough" id="walkthrough">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Experience the Vision</span>
+
+          <h2>Resort Video Walkthrough</h2>
+
+          <p>
+            Take a closer look at the resort concept, holiday homes,
+            landscaped surroundings and proposed leisure spaces.
+          </p>
+        </div>
+
+        <div class="video-frame">
+          <video controls preload="metadata"
+            poster="images/Aerial-view.png">
+            <source src="resort.mp4" type="video/mp4">
+
+            Your browser does not support HTML video.
+            Please use a modern browser to view the walkthrough.
+          </video>
+        </div>
+
+        <p class="video-note">
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ===== MASTERPLAN / AERIAL VIEW ===== -->
+    <section class="section masterplan" id="masterplan">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Plan Your Experience</span>
+
+          <h2>Resort Masterplan & Aerial View</h2>
+
+          <p>
+            Explore the overall resort concept and its relationship
+            with the surrounding greenery, internal roads, holiday
+            homes and recreational spaces.
+          </p>
+        </div>
+
+        <div class="masterplan-image">
+          <img
+            src="images/Masterplan.png"
+            alt="Saventure Sakleshpur farm resort aerial concept plan"
+            id="aerialImage"
+            loading="lazy">
+
+          <p class="plan-caption">
+            Aerial concept visualization — not a dimensioned or
+            approved technical masterplan.
+          </p>
+        </div>
+
+        <div class="plan-actions">
+
+          <button class="btn" id="zoomPlan">
+            View Full Image ↗
+          </button>
+
+          <a href="#amenities" class="btn"
+            style="background:transparent;color:#183c2b;">
+            View Amenities
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== AMENITIES ===== -->
+    <section class="section" id="amenities">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Resort Facilities</span>
+
+          <h2>Amenities Designed Around Nature</h2>
+
+          <p>
+            Discover the spaces envisioned to create a welcoming
+            blend of relaxation, recreation, wellness and hospitality.
+          </p>
+        </div>
+
+        <div class="amenities-grid">
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Entrance-resort.jpeg"
+                alt="Landscaped entrance and resort gateway"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">01 / ARRIVAL</span>
+              <h3>Grand Entrance</h3>
+              <p>
+                A welcoming arrival experience framed by
+                landscaped greenery and resort-style architecture.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Reception.jpeg"
+                alt="Traditional resort reception pavilion"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">02 / HOSPITALITY</span>
+              <h3>Reception Pavilion</h3>
+              <p>
+                A warm reception concept designed to welcome
+                guests and provide an inviting first impression.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Floriculture.jpeg"
+                alt="Flower gardens and ornamental plants"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">03 / LANDSCAPING</span>
+              <h3>Floriculture Gardens</h3>
+              <p>
+                Colourful flower beds, ornamental plants and
+                scenic garden pathways.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Horticulture.jpeg"
+                alt="Horticulture nursery and fruit trees"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">04 / GREEN LIVING</span>
+              <h3>Horticulture</h3>
+              <p>
+                A concept for fruit trees, nursery activities,
+                plantation and nature-based experiences.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Club-house.jpeg"
+                alt="Resort clubhouse surrounded by greenery"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">05 / RECREATION</span>
+              <h3>Clubhouse</h3>
+              <p>
+                A proposed leisure and gathering space for
+                relaxation and social activities.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Cafe.jpeg"
+                alt="Open-air resort cafe dining area"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">06 / DINING</span>
+              <h3>Resort Café</h3>
+              <p>
+                A relaxed dining concept with warm interiors
+                and views of the surrounding landscape.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Holiday-homes.jpeg"
+                alt="Independent holiday cottage among gardens"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">07 / STAY</span>
+              <h3>Holiday Homes</h3>
+              <p>
+                Cottage-style accommodation concepts that
+                complement the natural surroundings.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Meditation.png"
+                alt="Peaceful meditation pavilion and water garden"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">08 / WELLNESS</span>
+              <h3>Meditation Pavilion</h3>
+              <p>
+                A peaceful setting envisioned for mindfulness,
+                quiet reflection and relaxation.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Kitchen.png"
+                alt="Professional resort kitchen concept"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">09 / HOSPITALITY</span>
+              <h3>Professional Kitchen</h3>
+              <p>
+                A proposed food preparation facility to
+                support resort dining operations.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Studio-hall.png"
+                alt="Studio hall with a wooden interior"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">10 / ACTIVITIES</span>
+              <h3>Studio Hall</h3>
+              <p>
+                A flexible indoor space concept for yoga,
+                workshops, creative activities and events.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/Aerial-view.png"
+                alt="Aerial view of the complete farm resort concept"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">11 / THE EXPERIENCE</span>
+              <h3>Resort Landscape</h3>
+              <p>
+                An integrated resort vision combining
+                greenery, holiday homes and leisure areas.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section" id="nearby-places">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Explore the Region</span>
+
+          <h2>Places of Interest Nearby</h2>
+
+          <p>
+            Explore temples, scenic destinations and places of cultural interest around the region.
+            Please confirm distances and travel times before planning your visit.
+          </p>
+        </div>
+
+        <div class="amenities-grid">
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/manjunatha.jpg"
+                alt="Landscaped entrance and resort gateway"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">01 / 10km</span>
+              <h3>Sri Manjunatha Swamy Temple</h3>
+              <p>
+                A welcoming arrival experience framed by
+                landscaped greenery and resort-style architecture.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/kukke.jpg"
+                alt="Traditional resort reception pavilion"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">02 / 13km</span>
+              <h3>Sri Kukke Subbramanya Swamy Temple</h3>
+              <p>
+                A warm reception concept designed to welcome
+                guests and provide an inviting first impression.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/netravathi.jpg"
+                alt="Flower gardens and ornamental plants"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">03 / 3km</span>
+              <h3>Netravathi Dam</h3>
+              <p>
+                Colourful flower beds, ornamental plants and
+                scenic garden pathways.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/ganesha.jpg"
+                alt="Horticulture nursery and fruit trees"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">04 / 16km</span>
+              <h3>Sowthadka Maha Ganapathi</h3>
+              <p>
+                A concept for fruit trees, nursery activities,
+                plantation and nature-based experiences.
+              </p>
+            </div>
+          </article>
+
+          <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/sringeri.jpg"
+                alt="Resort clubhouse surrounded by greenery"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">05 / 11km</span>
+              <h3>Sringeri Sharadamba</h3>
+              <p>
+                A proposed leisure and gathering space for
+                relaxation and social activities.
+              </p>
+            </div>
+          </article>
+
+            <article class="amenity-card">
+            <div class="amenity-image">
+              <img
+                src="images/rama.jpg"
+                alt="Resort clubhouse surrounded by greenery"
+                loading="lazy">
+            </div>
+            <div class="amenity-info">
+              <span class="amenity-number">06 / 12km</span>
+              <h3>Sri Rama Kshetra</h3>
+              <p>
+                A proposed leisure and gathering space for
+                relaxation and social activities.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== STORYBOARD GALLERY ===== -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="eyebrow">Visual Exploration</span>
+
+          <h2>Resort Storyboard Gallery</h2>
+
+          <p>
+            Explore the architectural and landscape concepts
+            presented in the resort storyboard.
+          </p>
+        </div>
+
+        <div class="storyboard-image" id="storyboardPreview">
+          <img
+            src="images/Resort Amenities Overview.png"
+            alt="Saventure Sakleshpur resort storyboard showing the entrance, reception, gardens, clubhouse, cafe, holiday homes, meditation pavilion, kitchen and studio hall"
+            loading="lazy">
+        </div>
+
+        <p class="gallery-note">
+          Select the storyboard image to view it in a larger format.
+        </p>
+
+      </div>
+    </section>
+
+
+
+    <!-- ===== CONTACT / ENQUIRY ===== -->
+    <section class="section contact" id="contact">
+      
+      <div class="container contact-grid">
+
+        <div>
+          <span class="eyebrow">Connect With Saventure</span>
+
+          <h2>
+            Interested in the Sakleshpur Resort Project?
+          </h2>
+
+          <p class="contact-copy">
+            Get in touch with our team to learn more about the
+            project concept, proposed facilities and development details.
+          </p>
+
+          <div class="contact-details">
+            <p><strong>Company:</strong> Saventure Infra Tech LLP</p>
+            <p><strong>Project:</strong> Sakleshpur Farm Resort</p>
+            <p><strong>Location:</strong> Sakleshpur, Karnataka</p>
+          </div>
+
+          <!-- Map appears directly below the company, project and location details. -->
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6829.502913216808!2d75.74186652207456!3d12.731195955489124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba51e4eec90dd1b%3A0xfd79ead8b18f220e!2sKasargali%20Nature%20Stays!5e1!3m2!1sen!2sin!4v1786967695940!5m2!1sen!2sin"
+              title="Map showing the resort location"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+
+<form
+  class="contact-form"
+  id="enquiryForm"
+  action="https://formsubmit.co/saventurebiz@gmail.com"
+  method="POST"
+>
+
+  <h3>Send an Enquiry</h3>
+
+  <!-- FormSubmit settings -->
+  <input type="hidden" name="_subject"
+         value="New Website Enquiry - Sakleshpur Farm Resort">
+
+  <input type="hidden" name="_template" value="table">
+
+  <input type="hidden" name="_captcha" value="true">
+
+  <!-- Optional: redirect after successful submission -->
+  <input type="hidden" name="_next"
+         value="https://saventureinfratech234-boop.github.io/sakleshpur-farm-resort/thankyou.html">
+
+  <div class="form-group">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name"
+           placeholder="Enter your full name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone"
+           placeholder="Enter your phone number"
+           pattern="[0-9+\s()-]{7,20}" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email"
+           placeholder="Enter your email address">
+  </div>
+
+  <div class="form-group">
+    <label for="interest">Area of Interest</label>
+    <select id="interest" name="interest">
+      <option value="Project Information">Project Information</option>
+      <option value="Holiday Homes">Holiday Homes</option>
+      <option value="Resort Development">Resort Development</option>
+      <option value="Business Partnership">Business Partnership</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message"
+              placeholder="Tell us how we can help"></textarea>
+  </div>
+
+  <button type="submit" class="btn">
+    Submit Enquiry ↗
+  </button>
+
+  <!-- <p id="formMessage" role="status"
+     style="font-size:13px;margin-top:12px;">
+  </p> -->
+
+</form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+
+      <p>
+        © <span id="year"></span> Saventure Infra Tech LLP.
+        All rights reserved.
+      </p>
+
+      <p>
+        Sakleshpur Farm Resort | <a href="#home">Back to top ↑</a>
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- ===== IMAGE LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox"
+    role="dialog" aria-modal="true"
+    aria-label="Expanded project image">
+
+    <button class="lightbox-close"
+      id="closeLightbox"
+      aria-label="Close image viewer">×</button>
+
+    <img src="" alt="" id="lightboxImage">
+  </div>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    // Mobile navigation
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    function setMenuOpen(isOpen) {
+      navLinks.classList.toggle("active", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+      menuToggle.textContent = isOpen ? "✕ Close" : "☰ Menu";
+    }
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      setMenuOpen(!isOpen);
+    });
+
+    // Close mobile menu after selecting a section
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        setMenuOpen(false);
+      });
+    });
+
+    // Current year in footer
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Image lightbox
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightboxImage");
+
+    function openLightbox(src, alt) {
+      lightboxImage.src = src;
+      lightboxImage.alt = alt;
+      lightbox.classList.add("open");
+      document.body.style.overflow = "hidden";
+      document.getElementById("closeLightbox").focus();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    document.getElementById("zoomPlan").addEventListener("click",
+      function () {
+        const img = document.getElementById("aerialImage");
+        openLightbox(img.src, img.alt);
+      }
+    );
+
+    document.getElementById("storyboardPreview")
+      .addEventListener("click", function () {
+        const img = this.querySelector("img");
+        openLightbox(img.src, img.alt);
+      });
+
+    document.getElementById("closeLightbox")
+      .addEventListener("click", closeLightbox);
+
+    lightbox.addEventListener("click", function (event) {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeLightbox();
+        setMenuOpen(false);
+      }
+    });
+
+    // Keep the navigation in its desktop state when the viewport grows.
+    window.addEventListener("resize", function () {
+      if (window.matchMedia("(min-width: 1001px)").matches) {
+        setMenuOpen(false);
+      }
+    });
+
+    // Enquiry form demo
+    // Connect this form to your backend or CRM before publishing.
+    // document.getElementById("enquiryForm")
+    //   .addEventListener("submit", function (event) {
+    //     event.preventDefault();
+
+    //     const formMessage = document.getElementById("formMessage");
+
+    //     formMessage.textContent =
+    //       "This demo form is not connected yet. Please contact Saventure directly until an enquiry service is configured.";
+    //   });
+  </script>
+
+</body>
+</html>
